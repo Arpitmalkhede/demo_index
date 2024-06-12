@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="site-data/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="site-data/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="site-data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="site-data/favicon-16x16.png">
+    <link rel="manifest" href="site-data/site.webmanifest">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Discord Identity Generator</h1>
+        <div class="header-buttons">
+          <a href="https://github.com/ThatSINEWAVE/Discord-Identity" target="_blank" class="btn btn-header">
+            <i class="fab fa-github"></i> GitHub </a>
+          <a href="https://ko-fi.com/thatsinewave" target="_blank" class="btn btn-header">
+            <i class="fas fa-heart"></i> Support </a>
+          <a href="https://discord.gg/2nHHHBWNDw" class="btn" target="_blank">
+            <i class="fab fa-discord"></i> Discord </a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="profile-card">
+        <img id="profile-image" src="data/images/placeholder.png" alt="Profile Image">
+        <div class="profile-info">
+          <h2>Nickname: <span id="nickname">Otter</span>
+          </h2>
+          <hr>
+          <p>Username: <span id="username">Giga Chad Otter</span>
+          </p>
+          <p>Pronouns: <span id="pronouns">Otter / Otter</span>
+          </p>
+          <p>About me: <span id="about-me">Click "Generate Profile" to start</span>
+          </p>
+          <div id="primary-color-section" class="color-section">
+            <div class="color-box" id="primary-color-box"></div>
+            <p>Primary Color: <span id="primary-color-text"></span>
+            </p>
+          </div>
+          <div id="accent-color-section" class="color-section">
+            <div class="color-box" id="accent-color-box"></div>
+            <p>Accent Color: <span id="accent-color-text"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="button-group">
+        <button id="generate-btn" class="btn btn-primary">Generate Profile</button>
+        <button id="download-btn" class="btn btn-secondary" disabled>Download Profile</button>
+      </div>
+      <div class="stats-card">
+        <h3>Your generator stats</h3>
+        <hr>
+        <p>Profiles Generated: <span id="generated-count">0</span>
+        </p>
+        <p>Profiles Downloaded: <span id="downloaded-count">0</span>
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>MIT LICENSE &copy; 2024 - ThatSINEWAVE</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </body>
+</html>
